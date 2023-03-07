@@ -1,0 +1,30 @@
+detect-http-headers.o: detect-http-headers.c /usr/include/stdc-predef.h \
+ /home/C402/liqiang/src/dpdk-stable-19.11.8/x86_64-native-linuxapp-gcc/include/rte_config.h \
+ detect-http-accept.h detect-http-accept-enc.h detect-http-accept-lang.h \
+ detect-http-connection.h detect-http-content-len.h \
+ detect-http-content-type.h detect-http-location.h detect-http-server.h \
+ detect-http-referer.h detect-http-headers.h
+
+/usr/include/stdc-predef.h:
+
+/home/C402/liqiang/src/dpdk-stable-19.11.8/x86_64-native-linuxapp-gcc/include/rte_config.h:
+
+detect-http-accept.h:
+
+detect-http-accept-enc.h:
+
+detect-http-accept-lang.h:
+
+detect-http-connection.h:
+
+detect-http-content-len.h:
+
+detect-http-content-type.h:
+
+detect-http-location.h:
+
+detect-http-server.h:
+
+detect-http-referer.h:
+
+detect-http-headers.h:

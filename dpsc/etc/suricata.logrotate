@@ -1,0 +1,13 @@
+# Sample /etc/logrotate.d/suricata configuration file.
+/home/C402/liqiang/dev_suricata/var/log/suricata/*.log /home/C402/liqiang/dev_suricata/var/log/suricata/*.json {
+    daily
+    missingok
+    rotate 5
+    compress
+    delaycompress
+    minsize 500k
+    sharedscripts
+    postrotate
+        /bin/kill -HUP `cat /home/C402/liqiang/dev_suricata/var/run/suricata.pid 2> /dev/null` 2> /dev/null || true
+    endscript
+}

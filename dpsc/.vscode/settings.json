@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.config": "ssh_config",
+        "*.html": "html",
+        "*.js": "javascriptreact",
+        "*.ts": "typescript",
+        "source-nfq.h": "c",
+        "util-memcmp.h": "c",
+        "conf.h": "c",
+        "util-print.h": "c",
+        "source-dpdk.h": "c"
+    }
+}

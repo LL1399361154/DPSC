@@ -1,0 +1,2 @@
+autoscan: warning: missing AC_CHECK_FUNCS([realpath]) wanted by: 
+	src/util-path.c:226
