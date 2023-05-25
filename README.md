@@ -14,8 +14,7 @@ RunModeDpdkWorkers：
 ReceiveDpdkLoop：
 通过轮询模式从网卡中收包，使用rte_eth_rx_burst收包；
 将收到的数据包用rte_prefetch0预存取一部分到cache中，然后处理数据包，每处理完一个会再次预存取一部分数据包，防止缓存污染；
-dpdk没有网络协议栈，包的解码、流的重组等工作需要用户空间的应用程序自定义，由于时间缘故，依然采用suricata自己的包处理流程，
-将包发向TmThreadsSlotProcessPkt，由suricata原本的逻辑进行解码、流重组、规则过滤等。
+dpdk没有网络协议栈，包的解码、流的重组等工作需要用户空间的应用程序自定义，由于时间缘故，依然采用suricata自己的包处理流程，将包发向TmThreadsSlotProcessPkt，由suricata原本的逻辑进行解码、流重组、规则过滤等。
 
 DpdkFowardPacket：
 根据规则匹配时确定的包的ACTION，判断是forward还是drop，由于使用了suricata内的包处理逻辑，要释放Packet的内存！！！
