@@ -38,7 +38,8 @@ DpdkFowardPacket：
 ```
 - 使用Hyperscan库提高正则匹配性能：
 ```
-suricata允许使用hyperscan作为正则匹配库来替换AC算法，在飞腾、麒麟、x86多个平台中成功测试hyperscan。
+suricata允许使用hyperscan作为正则匹配库来替换AC算法。
+在飞腾、麒麟、x86多个平台中成功测试hyperscan。
 ```
 # PNG
 - 收包队列、发包队列与CPU绑定图
