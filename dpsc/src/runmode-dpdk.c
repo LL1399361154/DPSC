@@ -531,8 +531,8 @@ static int SetupDdpdkPorts(void)
 		dpdk_mempool_config.mbuf_ptr = rte_pktmbuf_pool_create(
 				dpdk_mempool_config.name, dpdk_mempool_config.n,
 				/* MEMPOOL_CACHE_SIZE*/ 128,
-				sizeof(Packet) /*dpdk_mempool_config.private_data_size*/,
-				/*RTE_MBUF_DEFAULT_BUF_SIZE*/ 2048,
+				0 /*dpdk_mempool_config.private_data_size*/,
+				RTE_MBUF_DEFAULT_BUF_SIZE,
 				dpdk_mempool_config.socket_id);
 	}
 
