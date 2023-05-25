@@ -40,3 +40,8 @@ DpdkFowardPacket：
 ```
 suricata允许使用hyperscan作为正则匹配库来替换AC算法，在飞腾、麒麟、x86多个平台中成功测试hyperscan。
 ```
+# PNG
+- 收包队列、发包队列与CPU绑定图
+![](./png/1.png)
+- 鲲鹏系统上测试结果图（万兆网卡）
+![](./png/2.png)
